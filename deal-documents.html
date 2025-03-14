@@ -1,15 +1,16 @@
+<!-- deal-documents.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVEST PLATFORM</title>
+    <title>Deal Documents - INVEST PLATFORM</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/deal-documents.css">
 </head>
 
 <body>
@@ -17,7 +18,6 @@
         <!-- Top Navigation -->
         <header class="top-nav">
             <div class="logo">
-                
                 <span>INVEST PLATFORM</span>
             </div>
             <div class="top-nav-right">
@@ -47,7 +47,7 @@
             <!-- Side Navigation -->
             <nav class="side-nav">
                 <ul>
-                    <li class="active">
+                    <li>
                         <a href="index.html">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -144,182 +144,134 @@
                 </ul>
             </nav>
 
-            <!-- Dashboard Content -->
+            <!-- Deal Documents Content -->
             <div class="content-area">
                 <div class="page-header">
                     <div class="page-title">
-                        <h1>DASHBOARD</h1>
-                        <p>Welcome back, John Smith</p>
+                        <h1>DEAL DOCUMENTS</h1>
+                        <p>Courtyard by Marriott - Nashville, TN</p>
                     </div>
                     <div class="page-actions">
-                        <button class="btn btn-primary">+ New Deal</button>
+                        <button class="btn btn-secondary">Back to Deal Details</button>
+                        <button class="btn btn-primary">Continue to Team</button>
                     </div>
                 </div>
 
-                <div class="dashboard-grid">
-                    <!-- Active Deals -->
-                    <div class="dashboard-card active-deals">
-                        <h2>ACTIVE DEALS</h2>
-                        <div class="deal-cards">
-                            <div class="deal-card">
-                                <h3>Courtyard by Marriott</h3>
-                                <p>Nashville, TN</p>
-                                <div class="deal-metrics">
-                                    <span>$24.5M</span>
-                                    <span>|</span>
-                                    <span>138 Keys</span>
-                                </div>
-                                <div class="deal-stage">Stage: Due Diligence</div>
-                            </div>
-                            <div class="deal-card">
-                                <h3>Hampton Inn & Suites</h3>
-                                <p>Austin, TX</p>
-                                <div class="deal-metrics">
-                                    <span>$18.7M</span>
-                                    <span>|</span>
-                                    <span>94 Keys</span>
-                                </div>
-                                <div class="deal-stage">Stage: Underwriting</div>
-                            </div>
-                            <div class="deal-card">
-                                <h3>Hilton Garden Inn</h3>
-                                <p>Atlanta, GA</p>
-                                <div class="deal-metrics">
-                                    <span>$31.2M</span>
-                                    <span>|</span>
-                                    <span>152 Keys</span>
-                                </div>
-                                <div class="deal-stage">Stage: LOI Submitted</div>
-                            </div>
-                            <a href="pipeline.html" class="view-all">View All Deals</a>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Performance -->
-                    <div class="dashboard-card portfolio-performance">
-                        <h2>PORTFOLIO PERFORMANCE</h2>
-                        <div class="chart-container">
-                            <img src="images/charts/revpar-chart.svg" alt="RevPAR Chart - 12 Month Trend"
-                                class="performance-chart">
-                        </div>
-                        <div class="key-metrics">
-                            <h3>KEY METRICS</h3>
-                            <div class="metrics-grid">
-                                <div class="metric-card">
-                                    <div class="metric-value">$135</div>
-                                    <div class="metric-label">RevPAR</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">76.2%</div>
-                                    <div class="metric-label">Occ.</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">$177</div>
-                                    <div class="metric-label">ADR</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">39.8%</div>
-                                    <div class="metric-label">GOP %</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">$10.2M</div>
-                                    <div class="metric-label">NOI</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">7.4%</div>
-                                    <div class="metric-label">Cap Rate</div>
-                                </div>
+                <div class="documents-container">
+                    <div class="document-upload-section">
+                        <h2>UPLOAD DOCUMENTS</h2>
+                        <div class="upload-area">
+                            <input type="file" id="document-upload" multiple accept=".pdf,.doc,.docx,.xls,.xlsx">
+                            <div class="upload-instructions">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 9V15M9 12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                        stroke="#ADB5BD" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p>Drag and drop files or <span class="upload-link">browse</span></p>
+                                <small>Supported formats: PDF, DOC, XLS (max 50MB)</small>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Recent Activity -->
-                    <div class="dashboard-card recent-activity">
-                        <h2>RECENT ACTIVITY</h2>
-                        <ul class="activity-list">
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <b>Sarah Johnson</b> updated <a href="#">Hampton Inn & Suites</a>
+                    <div class="document-types-section">
+                        <h2>RECOMMENDED DOCUMENTS</h2>
+                        <div class="document-type-grid">
+                            <div class="document-type-card">
+                                <div class="document-type-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8.34162C20 7.8034 19.7831 7.28789 19.3982 6.91161L14.9579 2.56999C14.5842 2.20459 14.0824 2 13.5598 2H6C4.89543 2 4 2.89543 4 4Z"
+                                            stroke="#2D5BFF" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M14 2V6C14 7.10457 14.8954 8 16 8H20" stroke="#2D5BFF" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
                                 </div>
-                                <div class="activity-time">2 hours ago</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    New STR report for <a href="#">Courtyard by Marriott</a> available
+                                <div class="document-type-details">
+                                    <h3>Offering Memorandum</h3>
+                                    <p>Comprehensive property details and financial information</p>
                                 </div>
-                                <div class="activity-time">5 hours ago</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <b>Michael Chen</b> commented on <a href="#">Hilton Garden Inn</a> underwriting
+                                <button class="btn-upload">Upload</button>
+                            </div>
+
+                            <div class="document-type-card">
+                                <div class="document-type-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                                            stroke="#2D5BFF" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
                                 </div>
-                                <div class="activity-time">Yesterday</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <a href="#">Courtyard by Marriott</a> moved to Due Diligence
+                                <div class="document-type-details">
+                                    <h3>STR Report</h3>
+                                    <p>Historical performance and market data</p>
                                 </div>
-                                <div class="activity-time">Yesterday</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <b>Emily Rodriguez</b> added new document to <a href="#">Hilton Garden Inn</a>
+                                <button class="btn-upload">Upload</button>
+                            </div>
+
+                            <div class="document-type-card">
+                                <div class="document-type-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 12H15M9 16H15M9 8H15M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z"
+                                            stroke="#2D5BFF" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
                                 </div>
-                                <div class="activity-time">2 days ago</div>
-                            </li>
-                        </ul>
+                                <div class="document-type-details">
+                                    <h3>Property Improvement Plan</h3>
+                                    <p>Planned renovations and capital expenditures</p>
+                                </div>
+                                <button class="btn-upload">Upload</button>
+                            </div>
+
+                            <div class="document-type-card">
+                                <div class="document-type-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V9M13 2L20 9M13 2V9H20"
+                                            stroke="#2D5BFF" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="document-type-details">
+                                    <h3>Financial Statements</h3>
+                                    <p>Historical financial performance documents</p>
+                                </div>
+                                <button class="btn-upload">Upload</button>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Market Insights -->
-                    <div class="dashboard-card market-insights">
-                        <h2>MARKET INSIGHTS</h2>
-                        <div class="market-map">
-                            <img src="images/charts/market-map.svg" alt="Market Map with Property Locations">
+                    <div class="uploaded-documents-section">
+                        <h2>UPLOADED DOCUMENTS</h2>
+                        <div class="uploaded-documents-list">
+                            <div class="uploaded-document-item">
+                                <div class="document-icon">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8.34162C20 7.8034 19.7831 7.28789 19.3982 6.91161L14.9579 2.56999C14.5842 2.20459 14.0824 2 13.5598 2H6C4.89543 2 4 2.89543 4 4Z"
+                                            stroke="#2D5BFF" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M14 2V6C14 7.10457 14.8954 8 16 8H20" stroke="#2D5BFF" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="document-details">
+                                    <h3>Offering Memorandum.pdf</h3>
+                                    <p>Uploaded on 3/12/2025 - 45 pages</p>
+                                </div>
+                                <div class="document-actions">
+                                    <button class="btn-view">View</button>
+                                    <button class="btn-delete">Delete</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="market-rankings">
-                            <h3>Top Markets by RevPAR Growth:</h3>
-                            <ol class="ranking-list">
-                                <li>Nashville, TN +8.4%</li>
-                                <li>Austin, TX +7.2%</li>
-                                <li>Atlanta, GA +6.5%</li>
-                                <li>Charlotte, NC +5.8%</li>
-                                <li>Denver, CO +5.1%</li>
-                            </ol>
-                            <a href="analytics.html" class="view-report">View Market Report</a>
-                        </div>
-                    </div>
-
-                    <!-- Tasks & Reminders -->
-                    <div class="dashboard-card tasks-reminders">
-                        <h2>TASKS & REMINDERS</h2>
-                        <ul class="task-list">
-                            <li class="task-item">
-                                <input type="checkbox" id="task1">
-                                <label for="task1">Review updated underwriting for Hampton Inn & Suites</label>
-                                <div class="task-due">Due Tomorrow</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task2">
-                                <label for="task2">Prepare IC presentation for Courtyard by Marriott</label>
-                                <div class="task-due">Due in 3 days</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task3">
-                                <label for="task3">Schedule site visit for Hilton Garden Inn</label>
-                                <div class="task-due">Due in 1 week</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task4">
-                                <label for="task4">Review PIP estimates for Hampton Inn & Suites</label>
-                                <div class="task-due">Due in 1 week</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task5">
-                                <label for="task5">Follow up with broker regarding Hilton Garden Inn</label>
-                                <div class="task-due">Due in 2 weeks</div>
-                            </li>
-                        </ul>
-                        <a href="#" class="view-all">View All Tasks</a>
                     </div>
                 </div>
             </div>
@@ -327,7 +279,7 @@
     </div>
 
     <script src="js/main.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/deal-documents.js"></script>
 </body>
 
 </html>

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVEST PLATFORM</title>
+    <title>New Deal - INVEST PLATFORM</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/new-deal.css">
 </head>
 
 <body>
@@ -17,7 +17,6 @@
         <!-- Top Navigation -->
         <header class="top-nav">
             <div class="logo">
-                
                 <span>INVEST PLATFORM</span>
             </div>
             <div class="top-nav-right">
@@ -47,7 +46,7 @@
             <!-- Side Navigation -->
             <nav class="side-nav">
                 <ul>
-                    <li class="active">
+                    <li>
                         <a href="index.html">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -144,182 +143,108 @@
                 </ul>
             </nav>
 
-            <!-- Dashboard Content -->
+            <!-- New Deal Content -->
             <div class="content-area">
                 <div class="page-header">
                     <div class="page-title">
-                        <h1>DASHBOARD</h1>
-                        <p>Welcome back, John Smith</p>
+                        <h1>NEW DEAL</h1>
+                        <p>Create a New Hotel Investment Opportunity</p>
                     </div>
                     <div class="page-actions">
-                        <button class="btn btn-primary">+ New Deal</button>
+                        <button class="btn btn-secondary">Cancel</button>
+                        <button class="btn btn-primary">Continue</button>
                     </div>
                 </div>
 
-                <div class="dashboard-grid">
-                    <!-- Active Deals -->
-                    <div class="dashboard-card active-deals">
-                        <h2>ACTIVE DEALS</h2>
-                        <div class="deal-cards">
-                            <div class="deal-card">
-                                <h3>Courtyard by Marriott</h3>
-                                <p>Nashville, TN</p>
-                                <div class="deal-metrics">
-                                    <span>$24.5M</span>
-                                    <span>|</span>
-                                    <span>138 Keys</span>
-                                </div>
-                                <div class="deal-stage">Stage: Due Diligence</div>
+                <div class="new-deal-form">
+                    <div class="deal-form-section">
+                        <h2>BASIC INFORMATION</h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Property Name</label>
+                                <input type="text" placeholder="Enter property name">
                             </div>
-                            <div class="deal-card">
-                                <h3>Hampton Inn & Suites</h3>
-                                <p>Austin, TX</p>
-                                <div class="deal-metrics">
-                                    <span>$18.7M</span>
-                                    <span>|</span>
-                                    <span>94 Keys</span>
-                                </div>
-                                <div class="deal-stage">Stage: Underwriting</div>
+                            <div class="form-group">
+                                <label>Brand/Franchise</label>
+                                <select>
+                                    <option>Select Brand</option>
+                                    <option>Marriott</option>
+                                    <option>Hilton</option>
+                                    <option>Hyatt</option>
+                                    <option>Independent</option>
+                                </select>
                             </div>
-                            <div class="deal-card">
-                                <h3>Hilton Garden Inn</h3>
-                                <p>Atlanta, GA</p>
-                                <div class="deal-metrics">
-                                    <span>$31.2M</span>
-                                    <span>|</span>
-                                    <span>152 Keys</span>
-                                </div>
-                                <div class="deal-stage">Stage: LOI Submitted</div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" placeholder="City, State">
                             </div>
-                            <a href="pipeline.html" class="view-all">View All Deals</a>
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Performance -->
-                    <div class="dashboard-card portfolio-performance">
-                        <h2>PORTFOLIO PERFORMANCE</h2>
-                        <div class="chart-container">
-                            <img src="images/charts/revpar-chart.svg" alt="RevPAR Chart - 12 Month Trend"
-                                class="performance-chart">
-                        </div>
-                        <div class="key-metrics">
-                            <h3>KEY METRICS</h3>
-                            <div class="metrics-grid">
-                                <div class="metric-card">
-                                    <div class="metric-value">$135</div>
-                                    <div class="metric-label">RevPAR</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">76.2%</div>
-                                    <div class="metric-label">Occ.</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">$177</div>
-                                    <div class="metric-label">ADR</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">39.8%</div>
-                                    <div class="metric-label">GOP %</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">$10.2M</div>
-                                    <div class="metric-label">NOI</div>
-                                </div>
-                                <div class="metric-card">
-                                    <div class="metric-value">7.4%</div>
-                                    <div class="metric-label">Cap Rate</div>
-                                </div>
+                            <div class="form-group">
+                                <label>Number of Keys</label>
+                                <input type="number" placeholder="Enter number of rooms">
                             </div>
                         </div>
                     </div>
 
-                    <!-- Recent Activity -->
-                    <div class="dashboard-card recent-activity">
-                        <h2>RECENT ACTIVITY</h2>
-                        <ul class="activity-list">
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <b>Sarah Johnson</b> updated <a href="#">Hampton Inn & Suites</a>
-                                </div>
-                                <div class="activity-time">2 hours ago</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    New STR report for <a href="#">Courtyard by Marriott</a> available
-                                </div>
-                                <div class="activity-time">5 hours ago</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <b>Michael Chen</b> commented on <a href="#">Hilton Garden Inn</a> underwriting
-                                </div>
-                                <div class="activity-time">Yesterday</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <a href="#">Courtyard by Marriott</a> moved to Due Diligence
-                                </div>
-                                <div class="activity-time">Yesterday</div>
-                            </li>
-                            <li class="activity-item">
-                                <div class="activity-content">
-                                    <b>Emily Rodriguez</b> added new document to <a href="#">Hilton Garden Inn</a>
-                                </div>
-                                <div class="activity-time">2 days ago</div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Market Insights -->
-                    <div class="dashboard-card market-insights">
-                        <h2>MARKET INSIGHTS</h2>
-                        <div class="market-map">
-                            <img src="images/charts/market-map.svg" alt="Market Map with Property Locations">
-                        </div>
-                        <div class="market-rankings">
-                            <h3>Top Markets by RevPAR Growth:</h3>
-                            <ol class="ranking-list">
-                                <li>Nashville, TN +8.4%</li>
-                                <li>Austin, TX +7.2%</li>
-                                <li>Atlanta, GA +6.5%</li>
-                                <li>Charlotte, NC +5.8%</li>
-                                <li>Denver, CO +5.1%</li>
-                            </ol>
-                            <a href="analytics.html" class="view-report">View Market Report</a>
+                    <div class="deal-form-section">
+                        <h2>DEAL DETAILS</h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Purchase Price</label>
+                                <input type="text" placeholder="$ Amount">
+                            </div>
+                            <div class="form-group">
+                                <label>Deal Stage</label>
+                                <select>
+                                    <option>Initial Review</option>
+                                    <option>Preliminary Underwriting</option>
+                                    <option>Due Diligence</option>
+                                    <option>LOI Submitted</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Property Type</label>
+                                <select>
+                                    <option>Select Property Type</option>
+                                    <option>Full Service</option>
+                                    <option>Select Service</option>
+                                    <option>Limited Service</option>
+                                    <option>Extended Stay</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Market Type</label>
+                                <select>
+                                    <option>Select Market</option>
+                                    <option>Urban</option>
+                                    <option>Suburban</option>
+                                    <option>Airport</option>
+                                    <option>Resort</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Tasks & Reminders -->
-                    <div class="dashboard-card tasks-reminders">
-                        <h2>TASKS & REMINDERS</h2>
-                        <ul class="task-list">
-                            <li class="task-item">
-                                <input type="checkbox" id="task1">
-                                <label for="task1">Review updated underwriting for Hampton Inn & Suites</label>
-                                <div class="task-due">Due Tomorrow</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task2">
-                                <label for="task2">Prepare IC presentation for Courtyard by Marriott</label>
-                                <div class="task-due">Due in 3 days</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task3">
-                                <label for="task3">Schedule site visit for Hilton Garden Inn</label>
-                                <div class="task-due">Due in 1 week</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task4">
-                                <label for="task4">Review PIP estimates for Hampton Inn & Suites</label>
-                                <div class="task-due">Due in 1 week</div>
-                            </li>
-                            <li class="task-item">
-                                <input type="checkbox" id="task5">
-                                <label for="task5">Follow up with broker regarding Hilton Garden Inn</label>
-                                <div class="task-due">Due in 2 weeks</div>
-                            </li>
-                        </ul>
-                        <a href="#" class="view-all">View All Tasks</a>
+                    <div class="deal-form-section">
+                        <h2>TEAM ASSIGNMENT</h2>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Deal Lead</label>
+                                <select>
+                                    <option>John Smith</option>
+                                    <option>Sarah Johnson</option>
+                                    <option>Michael Chen</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Underwriting Team</label>
+                                <select multiple>
+                                    <option>John Smith</option>
+                                    <option>Sarah Johnson</option>
+                                    <option>Michael Chen</option>
+                                    <option>Emily Rodriguez</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -327,7 +252,7 @@
     </div>
 
     <script src="js/main.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/new-deal.js"></script>
 </body>
 
 </html>

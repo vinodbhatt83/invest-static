@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const newDealBtn = document.querySelector('.btn-primary');
     if (newDealBtn) {
         newDealBtn.addEventListener('click', function () {
+            window.location.href = 'new-deal.html';
             showNotification('New deal creation feature will be available in the next release.', 'info');
         });
     }
@@ -26,7 +27,7 @@ function initDealCards() {
             const dealName = this.querySelector('h3').textContent;
 
             // For the Courtyard by Marriott card, navigate to the deal underwriting page
-            if (dealName === 'Courtyard by Marriott') {
+            if (dealName) {
                 window.location.href = 'deal-underwriting.html';
             } else if (dealName === 'Hampton Inn & Suites') {
                 // Show notification for other cards

@@ -5,15 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
     initTaskCheckboxes();
 
     // Simulate chart data for demo purposes
-    simulateCharts();
+    //simulateCharts();
 
     // Add functionality to deal cards
-    initDealCards();
+    //initDealCards();
 
     // Add new deal button functionality
     const newDealBtn = document.querySelector('.btn-primary');
     if (newDealBtn) {
         newDealBtn.addEventListener('click', function () {
+            window.location.href = 'new-deal.html';
             showNotification('New deal creation feature will be available in the next release.', 'info');
         });
 
